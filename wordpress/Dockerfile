@@ -1,4 +1,4 @@
-FROM php-fpm-72-arm:latest
+FROM php-fpm-arm:7.2.0
 LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="ARM32v7/armhf"
 
 # docker-entrypoint.sh dependencies
