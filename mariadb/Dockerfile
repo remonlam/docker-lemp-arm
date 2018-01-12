@@ -4,7 +4,7 @@ LABEL maintainer="Remon Lam [remon@containerstack.io]" architecture="ARM32v7/arm
 RUN apk --update add mariadb mariadb-client pwgen && \
     rm -f /var/cache/apk/*
 
-ADD run.sh /scripts/docker-entrypoint
+ADD docker-entrypoint /scripts/docker-entrypoint
 RUN mkdir /scripts/pre-exec.d && \
     mkdir /scripts/pre-init.d && \
     chmod -R 755 /scripts
